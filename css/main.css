@@ -11,3 +11,57 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+
+/*
+  ========================================
+  Custom Styles
+  ========================================
+*/
+
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ a:hover {
+     text-decoration: underline;
+ }
+
+ .page-header {
+    position: relative;
+    height: 36px;
+    top: 50px;
+    z-index: 9000;
+    background: lightcyan;
+ }
+
+ .hero {
+     position: absolute;
+     top: 0;
+     height: 538px;
+     width: 100vw;
+     background: lightgray;
+ }
+
+ .promos {
+     position: relative;
+     top: 70vh;
+     z-index: 100;
+     height: 200px;
+     background: wheat;
+ }
+
+ .page-footer {
+    position: relative;
+    top: 70vh;
+    z-index: 100;
+    height: 90px;
+    background: lightgoldenrodyellow;
+ }
+
+ 
+

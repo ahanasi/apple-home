@@ -88,18 +88,35 @@ a:hover {
 
 .promos {
   position: relative;
-  top: 61vh;
+  top: 61.5vh;
   z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.5px;
   height: 200px;
-  background: wheat;
 }
 
 .page-footer {
   position: relative;
-  top: 61vh;
+  top: 61.5vh;
   z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  grid-auto-rows: 27px;
+  width: 990px;
   height: 90px;
-  background: lightgoldenrodyellow;
+  margin: 0 auto;
+  padding: 1em 0 2.6em;
+  font-size: 10px;
+  color: #6e6e6e;
+}
+
+.page-footer > div {
+  display: flex;
+}
+
+.page-footer > div > p {
+  align-self: flex-end;
 }
 
 .nav-list {
@@ -158,4 +175,34 @@ a:hover {
   height: 13px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAAzklEQVQYlWNgAIP%2F9v%2FrwVCfARn85%2F%2B%2F%2Fz8CzEeS%2BnMQJPL0%2Ba37796DJfsZ4EYBwar9DBkMCQwFR86DJeXBUo%2F6QToYHCAKtaO%2Bf%2F%2F%2F%2F3kmmHNm%2Fv%2F%2FD27CTee4c%2Ff%2F%2F2vT4VKfXiM5CQg2t4M5lckQd%2F3nB0n8vQji5HhCFEpArP73AeGF35dACkEgYPtxmODXnxueg2igbqikh3l%2F1%2FpV%2B7vWyzUwxHatB%2BvcBLNfgMEA6AEDBg4g26Br%2FffvqeUMWIEBULcEdikGkG4AzGOfgUQC7TUAAAAASUVORK5CYII%3D)
     no-repeat 0 0;
+}
+
+.footer-link {
+  color: #08c;
+  line-height: 1.2;
+}
+
+.footer-nav {
+  align-self: flex-end;
+}
+
+.footer-nav > li {
+  display: inline;
+}
+
+.footer-nav > li:not(:first-child) {
+  margin-left: 0.6em;
+  padding-left: 0.6em;
+  border-left: 1px solid #ccc;
+}
+
+.footer-link .country-btn {
+  position: relative;
+  top: 3px;
+}
+
+.tof {
+  height: 11px;
+    display: inline-block;
+    margin-left: 2px;
 }

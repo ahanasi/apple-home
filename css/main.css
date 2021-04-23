@@ -49,9 +49,41 @@ a:hover {
 .hero {
   position: absolute;
   top: 0;
+  display: flex;
+  justify-content: center;
   height: 538px;
   width: 100vw;
-  background: lightgray;
+  background-image: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero_2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.hero-header {
+  position: absolute;
+  top: 27.45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  margin-bottom: -12px;
+}
+
+.sub-heading {
+  margin-bottom: 27px;
+}
+
+.video-link {
+  height: 32px;
+  overflow: hidden;
+}
+
+.video-link > a > img:hover {
+  position: relative;
+  top: -32px;
 }
 
 .promos {
